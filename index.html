@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+
+
+    <section class="mainBox">
+
+
+        <section class="gameHeading">
+
+            <h2>Tic Tac Toe</h2>
+        </section>
+
+
+
+        <section>
+
+            <!-- //////FORM START //// -->
+            <div id="form" >
+                <fieldset>
+
+                    <legend>Player's Details</legend>
+
+                    <input type="text" placeholder="Player X Name" id="player1">
+                    <p></p>
+                    <input type="text" placeholder="Player O Name" id="player2">
+                    <button onclick="tossStart()">TOSS</button>
+                </fieldset>
+
+            </div>
+
+            <!-- //////FORM END ////////// -->
+
+            <!-- /////TOSS SECTION START ./////// -->
+
+            <div class="tossBox hide">
+
+                <h2 id="tossHeading">please wait until toss is processed...</h2>
+
+            </div>
+            <!-- ///////TOSS SECTION END//// -->
+
+
+
+                <!-- //////TIC GAME BOX START////// -->
+            <section class="appBox hide">
+
+
+
+                <div class="userBtn">
+                    <button id="xUserBtn">Player 1 <p></p> X users</button>
+                    <button id="OUserBtn">Player 2 <p></p> O users</button>
+                </div>
+
+                <section class="ticBox">
+
+
+                    <table>
+                        <tr>
+                            <td class="one "></td>
+                            <td class="two "></td>
+                            <td class="three "></td>
+                        </tr>
+                        <tr>
+                            <td class="four "></td>
+                            <td class="five "></td>
+                            <td class="six "></td>
+                        </tr>
+                        <tr>
+                            <td class="seven "></td>
+                            <td class="eight "></td>
+                            <td class="nine "></td>
+                        </tr>
+                    </table>
+                </section>
+            </section>
+
+                <!-- //////TIC GAME BOX END////// -->
+
+
+
+        </section>
+
+
+            <section class="resultBox hide">
+
+                <div id="winName">
+                    <h2 id="winChange"></h2>
+                </div>
+
+                <div id="winning">
+                    <h3 id="winningHeading">WINS!</h3> 
+                </div>
+
+                <div class="resultBtn">
+                    <button onclick="window.location.reload()">Restart</button>
+                   
+                </div>
+            </section>
+
+
+    </section>
+
+</body>
+<script src="app.js"></script>
+
+</html>

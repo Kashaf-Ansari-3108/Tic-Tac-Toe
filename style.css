@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Style+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    height: 100vh;
+
+}
+body{
+    background-image: url(./img/bg.jpg);
+    background-size: cover;
+}
+/* ///MAIN BOX START/// */
+.mainBox{
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+    height: 100vh;
+ 
+}
+/* ///MAIN BOX END/// */
+
+
+/* ////game heading start///// */
+.gameHeading{
+    margin-bottom: 20px;
+}
+.gameHeading h2{
+    font-size: 50px ;
+    font-family: 'Style Script', cursive;
+    color: whitesmoke;
+}
+/* ////game heading end///// */
+
+
+/* /////TOSS STYLING START/// */
+.tossBox h2{
+        background-image:linear-gradient(to right , #C9D6FF ,#E2E2E2);
+        padding: 10px;
+        border-radius: 5px;
+        color: black;
+        font-family: 'Style Script', cursive;
+        text-transform: capitalize;
+    }
+/* /////TOSS STYLING END/// */
+
+
+.hide{
+    display: none !important;
+}
+
+
+
+
+
+/* /////MAIN TIC TAC TAE GAME STYLING START///////// */
+.userBtn{
+    width: 100%;
+    /* border: 2px solid gold; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    /* background-image: linear-gradient(to right , #f05053 , #e1eec3); */
+}
+.userBtn button{
+    margin: 15px 10px;
+    width: 120px;
+    outline: none;
+    /* background-color: blue; */
+    color: white;
+    font-family: 'Acme', sans-serif;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    font-weight: bold;
+    color: white;
+    overflow: hidden;
+}
+.userBtn button:disabled{
+    background-color: gray;
+}
+.ticBox{
+    width: 100%;
+    /* border: 2px solid lime; */
+}
+table {
+    max-width: 350px;
+    margin: auto;
+}
+
+/* /////SET BORDER IN TIC APP//// */
+td {
+    width: 120px;
+    height: 100px;
+    text-align: center;
+    font-family: 'Acme', sans-serif;
+    font-size: 35px;
+    
+    
+}
+.one,.three{
+    border-bottom: none !important;
+}
+.one,.three , .four , .six{
+    border: 2px solid lightgray;
+}
+.two, .five,.eight{
+    border-top: 2px solid lightgray;
+    border-bottom: 2px solid lightgray;
+}
+.eight{
+    border-top: none !important;
+}
+.two{
+    border-bottom: none !important;
+}
+.seven , .nine{
+    border: 2px solid lightgray;
+    border-top: none !important;
+}
+
+
+.tdDisable{
+    pointer-events: none !important;
+}
+/* /////MAIN TIC TAC TAE GAME STYLING END///////// */
+
+#form{
+    /* border: 1px solid red;     */
+    width: 100%;
+    display: flex;
+ 
+    justify-content: center;
+    align-items: center;
+    padding: 10px 5px;
+}
+#form fieldset{
+        max-width: 500px;
+        border: 1px solid lightgrey;    
+        padding: 8px;
+    }
+
+#form fieldset legend{
+    margin: 10px 20px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 25px;
+}
+#form input{
+    width: 100%;
+    height: 40px;
+    outline: none;
+    font-family: 'Acme', sans-serif;
+    background: transparent;
+    color: white;
+    font-size: 25px;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid black;
+    margin: 15px 0;
+    }
+#form button{
+    display: block;
+    margin-left: auto;
+    margin-bottom: 10px;
+    width: 120px;
+    height: 40px;
+    outline: none;
+    font-family: cursive;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+}
+#form button:hover{
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(9,217,217,1) 100%, rgba(252,176,69,1) 100%);
+}
+
+
+
+    /* ///////RESULT BOX STYLING START///// */
+.resultBox{
+    border: 2px  dashed white;
+    width: 350px;
+    text-align: center;
+    padding: 10px;
+}
+#winName{
+    /* border:1px solid black; */
+    margin: 15px 0;
+    font-size: 45px;
+    font-family: 'Acme', sans-serif;
+    color: #FF4B2B;
+}
+
+#winning{
+    /* color: ; */
+    font-family: 'Acme', sans-serif;
+    font-size: 35px;
+    color: wheat;
+    margin: 15px 0;
+}
+
+.resultBtn button{
+    margin: 15px 10px;
+    width: 120px;
+    outline: none;
+    cursor: pointer;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(9,217,217,1) 100%, rgba(252,176,69,1) 100%);
+    color: white;
+    font-family: cursive;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    font-weight: bold;
+    color: black;
+    overflow: hidden;
+}
+    /* ///////RESULT BOX STYLING END///// */
